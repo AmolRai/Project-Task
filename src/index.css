@@ -1,0 +1,697 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* App CSS */
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: system-ui;
+  background-color: #0a1018;
+}
+
+img {
+  filter: invert(1);
+}
+
+/* Navbar CSS */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 3rem;
+  margin-top: 26px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.navbar-left img {
+  width: 40px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+.navbar-right img {
+  width: 18px;
+}
+
+.line {
+  width: 100%;
+  height: 0.1px;
+  background-color: #383636;
+}
+
+/* Home Container CSS */
+
+.home-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+/* Sidebar CSS */
+
+.sidebar {
+  width: 18rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  background-color: #161c23;
+  color: white;
+  height: 43rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sidebar img {
+  width: 1.5rem;
+}
+
+.sidebar-line {
+  width: 90%;
+  height: 1px;
+  background-color: #6262621b;
+}
+
+.sidebar-portfolio {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.transform {
+  transform: rotate(90deg);
+}
+
+.background-color {
+  background-color: #b0aeae26;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sidebar-wallets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar .top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 5rem;
+  gap: 16px;
+}
+
+.orange {
+  color: #e2c19d;
+}
+
+.wallet-1 {
+  color: #c78d4e;
+}
+
+.wallet-2 {
+  color: #7d6d5c;
+}
+
+.sidebar-wallets .left {
+  width: 100%;
+  margin-left: 12rem;
+  margin-top: 0.8rem;
+}
+
+.set {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.beneficiary {
+  width: 12rem;
+  height: 3rem;
+  color: #9898ff;
+  background-color: #161c23;
+  border: 1px solid #5151ff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+
+.beneficiary:hover {
+  background-color: #5a5af8c4;
+  color: white;
+}
+
+.support-sidebar {
+  background-color: #4b3c2b;
+  width: 100%;
+  height: 3.5rem;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+/* Coins CSS */
+
+.coins {
+  color: white;
+  width: 100vw;
+}
+
+.coin-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.coin-top-left {
+  margin-top: 6rem;
+}
+
+.coin-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-top-right .top {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.coin-top-right img {
+  width: 28px;
+}
+
+.coin-top-right .bottom {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-coin {
+  cursor: pointer;
+}
+
+.coin-top-right .bottom input {
+  width: 14.5rem;
+  height: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #141921;
+  border: none;
+  border: 1px solid #313131;
+}
+
+.coin-top-right .bottom button {
+  padding: 12px;
+  outline: none;
+  background-color: #141921;
+  border: none;
+  color: rgb(255, 237, 202);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.coin-top svg {
+  color: #e4c182;
+  font-size: 1rem;
+}
+
+.coin-top-left h1,
+.coin-top-right p {
+  color: #fedb9a;
+}
+
+.coin-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #313131;
+  border-radius: 5px;
+  outline: none;
+  overflow: hidden;
+  background-color: #141921;
+}
+
+.button-line {
+  background-color: #5b5b5b;
+  width: 1px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+/* Below is the css to embed image inside input tag */
+.coin-input-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#input {
+  height: 20px;
+  margin: 0;
+  padding-left: 35px;
+  color: lightgray;
+}
+
+#input-img {
+  position: absolute;
+  bottom: 19px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+}
+
+#input-img svg {
+  color: gray;
+}
+
+.coins-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 65vw;
+  margin-top: 4rem;
+  margin: auto;
+  margin: 4rem auto auto auto;
+  color: #adabaa;
+}
+
+.coins-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.coins-bottom-right svg {
+  color: rgb(202 162 118);
+  cursor: pointer;
+}
+
+.coins-line {
+  width: 90%;
+  height: 1px;
+  background-color: #99959530;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.crypto-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #80808096;
+  margin-top: 2rem;
+}
+
+/* Crypto CSS */
+
+.crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  background-color: #161c23;
+  height: 4rem;
+  padding: 0 20px;
+  border-radius: 2px;
+  margin-top: 0.8rem;
+  color: #999898;
+  font-weight: 500;
+}
+
+.crypto .send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bitcoin-crypto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bitcoin-crypto svg {
+  font-size: 2rem;
+  color: orange;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.send-blue {
+  color: rgb(132 132 241);
+}
+
+.send-orange {
+  color: rgb(202 162 118);
+}
+
+/* Drop Down Menu CSS */
+.drop-down-menu {
+  position: absolute;
+  top: 20rem;
+  right: 1.5rem;
+  width: 200px;
+  padding: 1rem;
+  background-color: #262a2e;
+  border: 3px solid #404854;
+  border-radius: 6px;
+  animation: animate 0.5s;
+}
+
+.drop-down-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 1rem;
+  gap: 1.5rem;
+  color: #959595;
+}
+
+.drop-down-menu ul li {
+  cursor: pointer;
+}
+
+/* Modal CSS */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #13161a;
+  color: white;
+  width: 60%;
+  height: 80%;
+  border-radius: 5px;
+  animation: animate 0.9s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.1);
+  }
+}
+
+.modal-overlay-styles {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  font-size: 1.5rem;
+  color: #a0a0a4;
+}
+
+.modal-receive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 22px;
+  font-size: 1.4rem;
+}
+
+.modal-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10rem;
+}
+
+.receive-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-list span {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-border {
+  border: 1px solid #e19a4c;
+  height: 40px !important;
+  width: 40px !important;
+  cursor: pointer;
+}
+
+.modal-inner {
+  background-color: #e19a4c;
+  margin: 5px;
+  color: black;
+}
+
+.circle {
+  background-color: #13161a !important;
+  border: 1px solid #a0a0a4;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #a0a0a4;
+  cursor: pointer;
+}
+
+.modal-list p {
+  color: #a0a0a4;
+}
+
+.modal-device {
+  color: #e19a4c !important;
+}
+
+/* Modal Bottom CSS */
+
+.model-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 1.2rem;
+}
+
+.model-bottom .instruction-text {
+  color: #7e7d7d;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 11rem;
+}
+
+.modal-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  padding: 18px 15px;
+  width: 60%;
+}
+
+.modal-desc p {
+  color: #a4a9d6;
+}
+
+.modal-desc svg {
+  color: #9e9e9e;
+  font-size: 1.5rem;
+}
+
+.modal-desc div svg {
+  color: #caa276;
+  font-size: 1rem;
+}
+
+.modal-desc div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0 10px;
+}
+
+/* Address */
+.address {
+  width: 34rem;
+  height: 7rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed #363a3e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.address h1 {
+  color: #e19a4c;
+  font-size: 22px;
+}
+
+.address button {
+  border: none;
+  color: #caa276;
+  background-color: #333538;
+  padding: 1rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Address Verifyed */
+.address-verfiyed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.address-verfiyed p {
+  color: #4848f6;
+  align-self: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+.address-verfiyed button {
+  color: #4848f6;
+  border: 1px solid #4848f6;
+  background: none;
+  margin-top: 4rem;
+  padding: 0.9rem 3.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.address-verfiyed button:hover {
+  background-color: #4848f6;
+  color: white;
+}
+
+.modal-line-container {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-line-1 {
+  position: relative;
+  width: 11.5rem;
+  height: 1px;
+  background-color: gray;
+  left: -7.2rem;
+  top: -1rem;
+}
+
+.modal-line-2 {
+  position: relative;
+  width: 11.7rem;
+  height: 1px;
+  background-color: gray;
+  left: 7rem;
+  top: -1rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1050px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .coin-top {
+    flex-direction: column;
+  }
+
+  .coin-top-right .top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .crypto-coins {
+    font-size: 13px;
+  }
+}
+
+/* Checkmark CSS */
+.checkmark {
+  font-size: 2.5rem;
+  color: #e19a4c;
+}
